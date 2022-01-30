@@ -1,0 +1,448 @@
+body{
+    width: 100%;
+}
+
+
+/* -------banner--------------- */
+
+.header_wapper{
+    background: #fff;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.site-title img{
+    width: 338px;
+    height: 95px;
+    padding-left: 50px;
+}
+.header-list{
+    display: flex;
+    padding: 40px;
+    padding-right: 100px;
+}
+.nav-list{
+    text-align: center;
+    font-family: Avenir;
+    font-weight: 900;
+    font-size: 22px;
+    text-align: left;
+    color: #000;
+    padding-inline: 20px;
+    
+    
+}
+.nav-list a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.site-donate{
+    font-family: Avenir;
+    font-weight: 900;
+    font-size: 19px;
+    text-align: left;
+    padding-top: 40px;
+    padding-right: 100px;
+}
+
+.donate_btn{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #0089FF;
+    border-radius: 25px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* -------banner--------------- */
+
+/* -------pagetop--------------- */
+
+.top-wapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+.top-wapper img{
+    width: 1196px;
+    height: 337px;
+}
+
+/* -------pagetop--------------- */
+/* -------about wapper title--------------- */
+.section-title-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title{
+    font-family: Avenir;
+    font-weight: 900;
+    font-size: 57px;
+    text-align: left;
+    color: #000;
+    padding-top: 155px;
+}
+
+.section-title-image img{
+    width: 361px;
+    height: 78px;
+    padding-top: 150px;
+}
+/* -------about wapper title--------------- */
+/* ---------------------more text------------------------- */
+
+
+.readmore-wrap {
+    position: relative;
+    padding-top: 100px;
+}
+.readmore-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -55px;
+    width: 160px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    z-index:10;
+
+    font-family: "DIN 1451 LT Pro";
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    color: #525252;
+}
+.readmore-text {
+    position: relative;
+    overflow: hidden;
+    height: 0px;
+
+    font-family: "Hiragino Sans";
+    font-size: 23px;
+    text-align: center;
+    color: #525252;
+    padding-top: 100px;
+    line-height: 40px;
+}
+.readmore-check {
+    display: none;
+}
+.readmore-check:checked + .readmore-btn{
+    display: none;
+}
+.readmore-check:checked ~ .readmore-text {
+    height: auto;
+}
+
+.img-about img{
+    width: 1046px;
+    height: 786px;
+    padding: 100px;
+}
+
+.img-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------more text------------------------- */
+/* -------about wapper subtitle--------------- */
+
+.section-sub-title{
+    font-family: "Hiragino Mincho ProN";
+    font-weight: normal;
+    font-size: 45px;
+    text-align: center;
+    color: #525252;
+    padding-top: 200px;
+}
+
+.section-btn-more{
+    font-family: "DIN 1451 LT Pro";
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    color: #525252;
+    padding-top: 200px;
+}
+
+.way-down{
+    text-align: center;
+}
+
+.way-down img{
+    width: 113px;
+    height: 42px;
+    background: transparent;
+}
+
+
+/* -------about wapper subtitle--------------- */
+/* -------slider design--------------- */
+
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:100%;
+    padding-top: 90px;
+}
+
+.slider img {
+    width: 100%;/*スライダー内の画像を横幅100%に*/
+    
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 50%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #9F9F9F;/*矢印の色*/
+    border-right: 2px solid #9F9F9F;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: 1.5%;
+    transform: rotate(-135deg);
+    z-index: 10;
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: 1.5%;
+    transform: rotate(45deg);
+}
+
+
+
+
+/* -------slider design--------------- */
+/* -------slider text--------------- */
+
+
+.list-outer{
+    position: relative;
+}
+.text-outer{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.text-name{
+    font-family: "Hiragino Sans";
+    font-weight: normal;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: left;
+    color: rgb(136, 136, 136);
+    padding-left: 20px;
+
+}
+.text-name-english{
+    font-family: "Hiragino Sans";
+    font-weight: normal;
+    font-size: 27px;
+    text-align: left;
+    color: rgb(104, 104, 104);
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.text-detail{
+    font-family: "Hiragino Sans";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #525252;
+    padding: 10px;
+    margin-left: 15px;
+    
+    background: rgba(255, 255, 255, 0.47);
+    line-height: 20px;
+}
+
+.list-outer2{
+    position: relative;
+}
+.text-outer2{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+/* -------slider text--------------- */
+/* -------pproject--------------- */
+
+
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider2 {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width: 100%;
+    margin:0 auto;
+    padding: 100px;
+}
+
+.slider2 img {
+    width: 50%;
+    /* height: 433px; */
+    z-index: 2;
+    
+    
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider2 .slick-slide2 {
+    margin:0 0px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev2, 
+.slick-next2 {
+    position: absolute;/*絶対配置にする*/
+    top: 81%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev2 {/*戻る矢印の位置と形状*/
+    left: 40%;
+    transform: rotate(-135deg);
+}
+
+.slick-next2 {/*次へ矢印の位置と形状*/
+    right: 40%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+    margin: -50px 0 0 0;
+    background: transparent;
+}
+
+.slick-dots li {
+    display:inline-block;
+    margin:0 5px;
+    padding-top: 90px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:16px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+     background:rgb(255, 255, 255);  /*ドットボタンの色 */
+}
+
+.slick-dots .slick-active button{
+    background:#333; /* ドットボタンの現在地表示の色  */
+} 
+
+
+
+
+
+.project-info{
+    position: relative;
+}
+.project-info-outer{
+    position: absolute;
+    top: 5%;
+    left: 55%;
+}
+.project-info-outer h1{
+    font-family: "Hiragino Sans";
+    font-weight: normal;
+    font-size: 52px;
+    text-align: left;
+    color: #525252;
+    padding: 10px;
+
+}
+.naka-karuizawa-info h1{
+    font-family: "Hiragino Sans";
+    font-weight: normal;
+    font-size: 45px;
+    text-align: left;
+    color: #525252;
+    padding: 0px;
+
+}
+.project-info-outer h2{
+    font-family: Avenir;
+    font-weight: 900;
+    font-size: 26px;
+    text-align: left;
+    color: #525252;
+    padding: 10px;
+
+}
+.project-info-outer p{
+    font-family: "Hiragino Sans";
+    font-weight: 500;
+    font-size: 23px;
+    text-align: left;
+    color: #525252;
+    line-height: 30px;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.naka-karuizawa-info p{
+    font-family: "Hiragino Sans";
+    font-weight: 500;
+    font-size: 23px;
+    text-align: left;
+    color: #525252;
+    line-height: 30px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.btn-project {
+    font-family: "DIN 1451 LT Pro";
+    font-size: 27px;
+    text-align: left;
+    color: #525252;
+    text-decoration: none;
+    padding: 10px;
+    
+}
